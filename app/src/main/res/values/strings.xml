@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string-array name="time_periods">
+        <item>Year</item>
+        <item>Month</item>
+        <item>Week</item>
+        <item>Day</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context=".StatsActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:background="@color/cardview_shadow_end_color"
+        android:textColor="@color/black"/>
+
+    <!-- Time Period Spinner (ComboBox) -->
+    <Spinner
+        android:id="@+id/spinnerTimePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFDFD"
+        android:backgroundTintMode="add"
+
+        android:outlineProvider="bounds"
+        android:scrollbarStyle="outsideOverlay"
+        android:spinnerMode="dropdown"
+        android:visibility="visible" />
+
+    <!-- RecyclerView for Statistics -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStats"
+        android:layout_width="match_parent"
+        android:layout_height="519dp"
+        android:layout_below="@id/spinnerTimePeriod"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>

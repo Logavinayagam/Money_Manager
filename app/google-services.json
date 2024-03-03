@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "163291358140",
+    "firebase_url": "https://money-maneger-581cc-default-rtdb.firebaseio.com",
+    "project_id": "money-maneger-581cc",
+    "storage_bucket": "money-maneger-581cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163291358140:android:a0976cc85b31e204b181b9",
+        "android_client_info": {
+          "package_name": "com.logavinayagam.moneymanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I7f12vm5hJXQWcbJapwXXsrXCrDIJP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163291358140:android:98f7e8b13c38d32bb181b9",
+        "android_client_info": {
+          "package_name": "com.logavinayagam.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I7f12vm5hJXQWcbJapwXXsrXCrDIJP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

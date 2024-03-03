@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/main"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/text"/>
+
+    <EditText
+        android:id="@+id/editTextIncome"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/text"
+        android:hint="Enter Income"
+        android:drawableLeft="@drawable/baseline_attach_money_24"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextIncome"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_monetization_on_24"
+        android:hint="Enter Expense"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextExpense"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_notes_24"
+        android:hint="Enter Reason"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextReason"
+        android:layout_marginTop="3dp"
+        android:text="Submit" />
+
+
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnViewHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Stats" />
+
+    <Button
+        android:id="@+id/btnViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRemainingBalance"
+        android:layout_marginTop="18dp"
+        android:text="View History" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnViewHistory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="280dp"
+        android:layout_marginTop="-565dp"
+        android:layout_marginEnd="0dp"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/textViewRemainingBalance"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginHorizontal="99dp"
+        android:layout_marginTop="6dp"
+        android:text="Remaining Balance: $0.00"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>
